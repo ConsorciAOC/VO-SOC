@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CertUltimPeriodeResponse xmlns="http://gencat.net/scsp/esquemes/SOC" xmlns:ns1="http://gencat.net/scsp/esquemes/PicaError">
+	<CertificatRequest>
+		<DataIniciSollicitud>aaaaaaaa</DataIniciSollicitud>
+		<IdPersona>
+			<NIF>
+				<TipusDocument>1</TipusDocument>
+				<NumDocument>aaaaaaaaaa</NumDocument>
+			</NIF>
+		</IdPersona>
+	</CertificatRequest>
+	<DataProces>2001-12-17T09:30:47.0Z</DataProces>
+	<DadesComunes>
+		<NIF>
+			<TipusDocument>D</TipusDocument>
+			<DescTipusDocument>aaaaaaaaaaaaaaaaaaaa</DescTipusDocument>
+			<NumDocument>aaaaaaaaaa</NumDocument>
+			<LletraDocument>a</LletraDocument>
+		</NIF>
+		<PerCod>0</PerCod>
+		<Nom>aaaaaaaaaaaaaaa</Nom>
+		<Cognom1>aaaaaaaaaaaaaaaaaaaa</Cognom1>
+		<Cognom2>aaaaaaaaaaaaaaaaaaaa</Cognom2>
+		<Nacionalitat>0</Nacionalitat>
+		<DescNacionalitat>String</DescNacionalitat>
+		<Sexe>1</Sexe>
+		<DescSexe>String</DescSexe>
+		<DataNaixement>1967-08-13</DataNaixement>
+	</DadesComunes>
+	<CertUltimPeriode>
+		<NumDiesInscrit>1234</NumDiesInscrit>
+		<PeriodeIns>
+			<IniciPeriode>1967-08-13</IniciPeriode>
+			<FiPeriode>1967-08-13</FiPeriode>
+		</PeriodeIns>
+	</CertUltimPeriode>
+	<ns1:PICAError>
+		<ns1:CodiError>String</ns1:CodiError>
+		<ns1:Error>String</ns1:Error>
+		<ns1:Descripcio>String</ns1:Descripcio>
+		<ns1:Causa>String</ns1:Causa>
+	</ns1:PICAError>
+</CertUltimPeriodeResponse>

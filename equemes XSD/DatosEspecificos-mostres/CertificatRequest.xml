@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CertificatRequest xmlns="http://gencat.net/scsp/esquemes/SOC">
+	<DataIniciSollicitud>aaaaaaaa</DataIniciSollicitud>
+	<IdPersona>
+		<NIF>
+			<TipusDocument>1</TipusDocument>
+			<NumDocument>aaaaaaaaaa</NumDocument>
+		</NIF>
+	</IdPersona>
+</CertificatRequest>

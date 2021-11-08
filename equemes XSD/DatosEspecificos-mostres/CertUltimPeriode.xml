@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CertUltimPeriode xmlns="http://gencat.net/scsp/esquemes/SOC">
+	<NumDiesInscrit>1234</NumDiesInscrit>
+	<PeriodeIns>
+		<IniciPeriode>1967-08-13</IniciPeriode>
+		<FiPeriode>1967-08-13</FiPeriode>
+	</PeriodeIns>
+</CertUltimPeriode>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CertDono xmlns="http://gencat.net/scsp/esquemes/SOC">
+	<Demanda>
+		<IndDono>String</IndDono>
+		<DataDono>1967-08-13</DataDono>
+	</Demanda>
+	<PersonaFisica>
+		<NIF>
+			<TipusDocument>D</TipusDocument>
+			<DescTipusDocument>aaaaaaaaaaaaaaaaaaaa</DescTipusDocument>
+			<NumDocument>aaaaaaaaaa</NumDocument>
+			<LletraDocument>a</LletraDocument>
+		</NIF>
+		<PerCod>0</PerCod>
+		<Nom>aaaaaaaaaaaaaaa</Nom>
+		<Cognom1>aaaaaaaaaaaaaaaaaaaa</Cognom1>
+		<Cognom2>aaaaaaaaaaaaaaaaaaaa</Cognom2>
+		<PaisResidencia>aaa</PaisResidencia>
+		<DescPaisResidencia>String</DescPaisResidencia>
+	</PersonaFisica>
+</CertDono>

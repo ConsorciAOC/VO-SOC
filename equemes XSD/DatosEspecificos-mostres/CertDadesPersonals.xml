@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CertDadesPersonals xmlns="http://gencat.net/scsp/esquemes/SOC">
+	<PaisResidencia>aaa</PaisResidencia>
+	<DescPaisResidencia>String</DescPaisResidencia>
+	<DadesResidencia>
+		<DomiciliEspanya>
+			<TipusVia>aa</TipusVia>
+			<DescVia>String</DescVia>
+			<NomVia>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</NomVia>
+			<NumVia>aaaa</NumVia>
+			<BisDup>aa</BisDup>
+			<DescBisDup>String</DescBisDup>
+			<Escala>aa</Escala>
+			<Pis>aa</Pis>
+			<LletraNum>aaaa</LletraNum>
+			<Provincia>aa</Provincia>
+			<DescProvincia>String</DescProvincia>
+			<Illa>aaaa</Illa>
+			<DescIlla>String</DescIlla>
+			<Municipi>aaaaa</Municipi>
+			<DescMunicipi>String</DescMunicipi>
+			<Localitat>aaaaaaa</Localitat>
+			<DescLocalitat>String</DescLocalitat>
+			<CodiPostal>aaaaa</CodiPostal>
+			<EntitatSingular>aaaaaaaaa</EntitatSingular>
+			<DescEntitatSingular>String</DescEntitatSingular>
+		</DomiciliEspanya>
+	</DadesResidencia>
+</CertDadesPersonals>
