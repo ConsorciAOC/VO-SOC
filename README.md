@@ -2,6 +2,25 @@
 
 # **Via Oberta – Servei d&#39;Ocupació de Catalunya**
 
+## INDEX
+
+- [1. Introducció](#1)
+- [2. Transmissions de dades disponibles](#2)
+- [3. Missatgeria del servei](#3)
+   * [3.1 Certificat d&#39;inscripció del demandant (SOC\_CERT\_INSCRIPCIO)](#3.1)
+        * [3.1.1 Petició – dades específiques](#3.1.1)
+		* [3.1.2 Resposta – dades específiques](#3.1.2)
+   * [3.2 Certificat de període d&#39;inscripció (SOC\_CERT\_ULTIMPERIODE)](#3.2)
+        * [3.2.1 Petició – dades específiques](#3.2.1)
+		* [3.2.2 Resposta – dades específiques](#3.2.2)
+   * [3.3 Certificat de dades personal (SOC\_CERT\_DADESPERSONALS)](#3.3)
+        * [3.3.1 Petició – dades específiques](#3.3.1)
+		* [3.3.2 Resposta – dades específiques ](#3.3.2)
+   * [3.4 Certificat de demandant d&#39;ocupació no ocupat (SOC\_CERT\_DONO)](#3.4)
+        * [3.4.1 Petició – dades específiques](#3.4.1)
+		* [3.4.2 Resposta – dades específiques ](#3.4.2)
+-  [4. Joc de proves](#4)
+
 
 **Històric de revisions**
 
@@ -14,7 +33,7 @@
 | V2.3 | 12/04/2021 | Roger Noguera Arnau | Baixa de la modalitat SOC\_CERT\_PERCEPTOR. |
 
 
-# 1 Introducció
+# 1 Introducció <a name="1"></a>
 
 Aquest document detalla la missatgeria associada al servei del Servei d&#39;Ocupació de Catalunya (SOC en endavant).
 
@@ -26,7 +45,7 @@ Per poder realitzar la integració cal conèixer prèviament la següent documen
 [PCI]:https://github.com/ConsorciAOC/PCI
 
 
-# 2 Transmissions de dades disponibles
+# 2 Transmissions de dades disponibles <a name="2"></a>
 
 Les dades disponibles a través del servei són les que es presenten a continuació:
 
@@ -41,14 +60,14 @@ Les dades disponibles a través del servei són les que es presenten a continuac
 | **SOC** |  SOC\_CERT\_DADESPERSONALS | Certificat de dades personals. |
 | **SOC** |  SOC\_CERT\_DONO | Certificat de demandant d&#39;ocupació no ocupat. |
 
-# 3 Missatgeria dels serveis
+# 3 Missatgeria del servei <a name="3"></a>
 
 A continuació es detalla la missatgeria corresponent al bloc de dades específiques de les modalitats de consum del producte SOC.
 
-## 3.1 Certificat d&#39;inscripció del demandant (SOC\_CERT\_INSCRIPCIO)
+## 3.1 Certificat d&#39;inscripció del demandant (SOC\_CERT\_INSCRIPCIO) <a name="3.1"></a>
 
     
-### 3.1.1 Petició – dades específiques
+### 3.1.1 Petició – dades específiques <a name="3.1.1"></a>
 
 | _Element_ | _Descripció_ |
 | --- | --- |
@@ -60,11 +79,11 @@ A continuació es detalla la missatgeria corresponent al bloc de dades específi
 ![1](captures/1.png)
 
     
-### 3.1.2 Resposta – dades específiques
+### 3.1.2 Resposta – dades específiques <a name="3.1.2"></a>
 
 | _Element_ | _Descripció_ |
 | --- | --- |
-| CertInscripcioResponse/CertificatRequest | Dades de la petició. Vegeu apartat 3.1.1 |
+| CertInscripcioResponse/CertificatRequest | Dades de la petició. Vegeu  [l&#39;apartat 3.1.1](#3.1.1)|
 | CertInscripcioResponse/DataProces | Data de processament de la petició per part de la plataforma del SOC. |
 | CertInscripcioResponse/DadesComunes | Dades del titular informat en la petició. Vegeu apartat 3.1.2.1 |
 | CertInscripcioResponse/CertInscripció/DemandantInscrit | Indicador de si el titular està inscrit (S | N). |
@@ -99,19 +118,19 @@ A continuació es detalla la missatgeria corresponent al bloc de dades específi
 | //PICAError/Descripcio | Descripció de l&#39;error. |
 | //PICAError/Causa | Traça de detall de l&#39;error. |
 
-## 3.2 Certificat de període d&#39;inscripció (SOC\_CERT\_ULTIMPERIODE)
+## 3.2 Certificat de període d&#39;inscripció (SOC\_CERT\_ULTIMPERIODE) <a name="3.2"></a>
 
     
-### 3.2.1 Petició – dades específiques
+### 3.2.1 Petició – dades específiques <a name="3.2.1"></a>
 
-El format de la petició és identic al detallat a l&#39;apartat 3.1.1
+El format de la petició és identic al detallat a [l&#39;apartat 3.1.1](#3.1.1)
 
 
-### 3.2.2 Resposta – dades específiques
+### 3.2.2 Resposta – dades específiques <a name="3.2.2"></a>
 
 | _Element_ | _Descripció_ |
 | --- | --- |
-| CertUltimPeriodeResponse/CertificatRequest | Dades de la petició. Vegeu apartat 3.1.1 |
+| CertUltimPeriodeResponse/CertificatRequest | Dades de la petició. Vegeu [l&#39;apartat 3.1.1](#3.1.1) |
 | CertUltimPeriodeResponse/DataProces | Data de processament de la petició per part de la plataforma del SOC. |
 | CertUltimPeriodeResponse/DadesComunes | Dades del titular informat en la petició. Vegeu apartat 3.1.2.1 |
 | CertUltimPeriodeResponse/CertInscripció/NumDiesInscrit | Nombre de dies que consta que la persona està inscrita com a demandant d&#39;ocupació des de la data d&#39;inici de la sol·licitud. |
@@ -120,16 +139,19 @@ El format de la petició és identic al detallat a l&#39;apartat 3.1.1
 | CertUltimPeriodeResponse/PICAError | Detalls de l&#39;incidència en cas d&#39;error processant la petició. Vegeu apartat 3.1.2.2 |
 
 ![3](captures/3.png)
+ 
+## 3.3 Certificat de dades personal (SOC\_CERT\_DADESPERSONALS) <a name="3.3"></a>
 
-## 3.3 Certificat de dades personal (SOC\_CERT\_DADESPERSONALS)
-
-    
-### 3.3.1 Petició – dades específiques
-
-El format de la petició és identic al detallat a l&#39;apartat 3.1.1
 
     
-### 3.3.2 Resposta – dades específiques
+### 3.3.1 Petició – dades específiques <a name="3.3.1"></a>
+
+
+El format de la petició és identic al detallat a [l&#39;apartat 3.1.1](#3.1.1)
+
+    
+### 3.3.2 Resposta – dades específiques <a name="3.3.2"></a>
+
 
 ![4](captures/4.png)
 
@@ -165,15 +187,15 @@ El format de la petició és identic al detallat a l&#39;apartat 3.1.1
 | CertDadesPersonalsResponse/CertDadesPersonals/DadesResidencia/DomiciliEstranger/CodiPostalEstranger | Codi de domicili estranger. |
 | CertDadesPersonalsResponse/PICAError | Detalls de l&#39;incidència en cas d&#39;error processant la petició. Vegeu apartat 3.1.2.2 |
 
-## 3.4 Certificat de demandant d&#39;ocupació no ocupat (SOC\_CERT\_DONO)
+## 3.4 Certificat de demandant d&#39;ocupació no ocupat (SOC\_CERT\_DONO) <a name="3.4"></a>
 
     
-### 3.4.1 Petició – dades específiques
+### 3.4.1 Petició – dades específiques <a name="3.4.1"></a>
 
-El format de la petició és identic al detallat a l&#39;apartat 3.1.1
+El format de la petició és identic al detallat a [l&#39;apartat 3.1.1](#3.1.1)
 
     
-### 3.4.2 Resposta – dades específiques
+### 3.4.2 Resposta – dades específiques <a name="3.4.2"></a>
 
 | _Element_ | _Descripció_ |
 | --- | --- |
@@ -193,15 +215,15 @@ El format de la petició és identic al detallat a l&#39;apartat 3.1.1
 | //PersonaFisica/Cognom2 | Segon cognom del demandant. |
 | //PersonaFisica/PaisResidencia | Codi de pais de residència. |
 | //PersonaFisica/DescPaisResidencia | Descripció del país de residència. |
-| CertDonoResponse/PICAError | Detalls de l&#39;incidència en cas d&#39;error processant la petició. Vegeu apartat 3.1.2.2 |
+| CertDonoResponse/PICAError | Detalls de l&#39;incidència en cas d&#39;error processant la petició. [l&#39;apartat 3.1.2](#3.1.2) |
 
 ![5](captures/5.png)
 
-# 4 Joc de proves
+# 4 Joc de proves <a name="4"></a>
 
 L&#39;emissor final publica els següent [joc de proves a l&#39;entorn de pre-producció][proves] 
 
-[proves]: http://transversals.ctti.intranet.gencat.cat/sol-pica-iop-gene/soc/
+[proves]: http://transversals.ctti.intranet.gencat.cat/sol-pica-iop-gene
 
 
 ![image](https://user-images.githubusercontent.com/32306731/137281698-9dfc2044-94f7-487f-a7d6-9a4e0707feb3.png) En cas de tindre problemes per accedir als jocs de proves, si us plau, obre un tiquet a través del [formulari][form]
